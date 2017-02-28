@@ -20,7 +20,7 @@ public class StarterApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        Parse.enableLocalDatastore(this)
+        Parse.enableLocalDatastore(this);
 
         Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
                 .applicationId("818ec3858a97a89c6234ab147af921dda33776cd")
