@@ -1,5 +1,6 @@
 package com.example.ani.instagramclone;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
@@ -32,6 +33,9 @@ public class UserImageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_image);
+
+        Intent intent = getIntent();
+        username = intent.getStringExtra("username");
 
         myFeed = username.equals(ParseUser.getCurrentUser().getUsername());
 
