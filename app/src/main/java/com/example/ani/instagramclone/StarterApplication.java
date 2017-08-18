@@ -23,9 +23,9 @@ public class StarterApplication extends Application {
         Parse.enableLocalDatastore(this);
 
         Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
-                .applicationId("818ec3858a97a89c6234ab147af921dda33776cd")
-                .clientKey("8ecf0800f4de5a15f0de5ef059577953ac721b80")
-                .server("http://ec2-54-202-183-25.us-west-2.compute.amazonaws.com:80/parse/")
+                .applicationId("")
+                .clientKey("")
+                .server("")
                 .build()
         );
 
